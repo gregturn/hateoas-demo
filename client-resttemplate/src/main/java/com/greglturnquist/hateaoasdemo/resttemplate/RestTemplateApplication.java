@@ -1,4 +1,6 @@
-package com.greglturnquist.springonehateaoasdemo.resttemplate;
+package com.greglturnquist.hateaoasdemo.resttemplate;
+
+import static org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType.*;
 
 import java.util.Collections;
 
@@ -21,16 +23,14 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import static org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType.*;
-
 @SpringBootApplication
 @EnableHypermediaSupport(type = { HAL, HAL_FORMS })
-public class SpringOneRestTemplateApplication {
+public class RestTemplateApplication {
 
-	private static final Logger logger = LoggerFactory.getLogger(SpringOneRestTemplateApplication.class);
+	private static final Logger logger = LoggerFactory.getLogger(RestTemplateApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringOneRestTemplateApplication.class, args);
+		SpringApplication.run(RestTemplateApplication.class, args);
 	}
 
 	@Bean

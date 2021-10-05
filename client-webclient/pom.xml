@@ -5,14 +5,14 @@
 
 	<parent>
 		<groupId>com.greglturnquist</groupId>
-		<artifactId>springone-hateoas-demo</artifactId>
+		<artifactId>hateoas-demo</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.greglturnquist</groupId>
-	<artifactId>springone-hateoas-demo-client-webclient</artifactId>
+	<artifactId>hateoas-demo-client-webclient</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringOne 2020 :: Spring HATEOAS :: Client WebClient Demo</name>
+	<name>Spring HATEOAS :: Client WebClient Demo</name>
 
 	<properties>
 		<java.version>11</java.version>

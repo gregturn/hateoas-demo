@@ -1,4 +1,4 @@
-package com.greglturnquist.springonehateoasdemo.server;
+package com.greglturnquist.hateoasdemo.server;
 
 import java.util.ArrayList;
 import java.util.List;

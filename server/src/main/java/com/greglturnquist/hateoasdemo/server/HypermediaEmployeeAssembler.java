@@ -1,4 +1,4 @@
-package com.greglturnquist.springonehateoasdemo.server;
+package com.greglturnquist.hateoasdemo.server;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 

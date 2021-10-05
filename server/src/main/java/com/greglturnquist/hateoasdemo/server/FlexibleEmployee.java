@@ -1,4 +1,4 @@
-package com.greglturnquist.springonehateaoasdemo.resttemplate;
+package com.greglturnquist.hateoasdemo.server;
 
 import java.util.Objects;
 
@@ -20,7 +20,7 @@ class FlexibleEmployee {
 
 	@JsonCreator
 	FlexibleEmployee(@JsonProperty("id") int id, @JsonProperty("firstName") String firstName,
-					 @JsonProperty("lastName") String lastName, @JsonProperty("role") String role) {
+			@JsonProperty("lastName") String lastName, @JsonProperty("role") String role) {
 
 		this.id = id;
 		this.firstName = firstName;

@@ -1,4 +1,6 @@
-package com.greglturnquist.springonehateaoasdemo.webclient;
+package com.greglturnquist.hateaoasdemo.webclient;
+
+import static org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,20 +13,17 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.hateoas.config.EnableHypermediaSupport;
 import org.springframework.hateoas.config.HypermediaWebClientConfigurer;
-import org.springframework.hateoas.server.core.TypeReferences;
 import org.springframework.hateoas.server.core.TypeReferences.EntityModelType;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import static org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType.*;
-
 @SpringBootApplication
 @EnableHypermediaSupport(type = { HAL, HAL_FORMS })
-public class SpringOneWebClientApplication {
+public class WebClientApplication {
 
-	private static final Logger logger = LoggerFactory.getLogger(SpringOneWebClientApplication.class);
+	private static final Logger logger = LoggerFactory.getLogger(WebClientApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringOneWebClientApplication.class, args);
+		SpringApplication.run(WebClientApplication.class, args);
 	}
 
 	@Bean

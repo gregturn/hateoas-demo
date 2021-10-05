@@ -1,10 +1,10 @@
-package com.greglturnquist.springonehateoasdemo.server;
+package com.greglturnquist.hateoasdemo.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringoneHateoasDemoApplicationTests {
+class HateoasDemoApplicationTests {
 
 	@Test
 	void contextLoads() {

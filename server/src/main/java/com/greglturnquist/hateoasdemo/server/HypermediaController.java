@@ -1,4 +1,6 @@
-package com.greglturnquist.springonehateoasdemo.server;
+package com.greglturnquist.hateoasdemo.server;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 import org.springframework.hateoas.Affordance;
 import org.springframework.hateoas.CollectionModel;
@@ -10,8 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController
 public class HypermediaController {

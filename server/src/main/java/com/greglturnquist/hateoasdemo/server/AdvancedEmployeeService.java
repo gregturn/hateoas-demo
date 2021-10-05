@@ -1,9 +1,9 @@
-package com.greglturnquist.springonehateoasdemo.server;
-
-import org.springframework.stereotype.Service;
+package com.greglturnquist.hateoasdemo.server;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.springframework.stereotype.Service;
 
 @Service
 public class AdvancedEmployeeService {

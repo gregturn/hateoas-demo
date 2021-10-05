@@ -1,4 +1,4 @@
-package com.greglturnquist.springonehateoasdemo.server;
+package com.greglturnquist.hateoasdemo.server;
 
 class EmployeeNotFound extends RuntimeException {
 

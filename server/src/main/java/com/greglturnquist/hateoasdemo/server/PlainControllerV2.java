@@ -1,4 +1,6 @@
-package com.greglturnquist.springonehateoasdemo.server;
+package com.greglturnquist.hateoasdemo.server;
+
+import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -7,35 +9,32 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
-public class FlexibleController {
+public class PlainControllerV2 {
 
-	private final FlexibleEmployeeService employeeService;
+	private final AdvancedEmployeeService employeeService;
 
-	public FlexibleController(FlexibleEmployeeService employeeService) {
+	public PlainControllerV2(AdvancedEmployeeService employeeService) {
 		this.employeeService = employeeService;
 	}
 
-	@GetMapping("/flexible/employees")
-	List<FlexibleEmployee> all() {
+	@GetMapping("/api/v2/employees")
+	List<AdvancedEmployee> all() {
 		return this.employeeService.findAll();
 	}
 
-	@PostMapping("/flexible/employees")
-	FlexibleEmployee create(@RequestBody FlexibleEmployee newEmployee) {
+	@PostMapping("/api/v2/employees")
+	AdvancedEmployee create(@RequestBody AdvancedEmployee newEmployee) {
 		return this.employeeService.create(newEmployee);
 	}
 
-	@GetMapping("/flexible/employees/{id}")
-	FlexibleEmployee one(@PathVariable int id) {
+	@GetMapping("/api/v2/employees/{id}")
+	AdvancedEmployee one(@PathVariable int id) {
 		return this.employeeService.findById(id);
 	}
 
-	@PutMapping("/flexible/employees/{id}")
-	FlexibleEmployee update(@RequestBody FlexibleEmployee updatedEmployee, @PathVariable int id) {
+	@PutMapping("/api/v2/employees/{id}")
+	AdvancedEmployee update(@RequestBody AdvancedEmployee updatedEmployee, @PathVariable int id) {
 		return this.employeeService.replace(updatedEmployee, id);
 	}
-
 }

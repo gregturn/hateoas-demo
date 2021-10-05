@@ -3,22 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-<!--	<parent>-->
-<!--		<groupId>org.springframework.boot</groupId>-->
-<!--		<artifactId>spring-boot-starter-parent</artifactId>-->
-<!--		<version>2.3.3.RELEASE</version>-->
-<!--		<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
-<!--	</parent>-->
 	<parent>
 		<groupId>com.greglturnquist</groupId>
-		<artifactId>springone-hateoas-demo</artifactId>
+		<artifactId>hateoas-demo</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.greglturnquist</groupId>
-	<artifactId>springone-hateoas-demo-server</artifactId>
+	<artifactId>hateoas-demo-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringOne 2020 :: Spring HATEOAS :: Server Demo</name>
+	<name>Spring HATEOAS :: Server Demo</name>
 
 	<properties>
 		<java.version>11</java.version>

@@ -1,8 +1,6 @@
-package com.greglturnquist.springonehateoasdemo.server;
+package com.greglturnquist.hateoasdemo.server;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-
-import java.util.Objects;
 
 class AdvancedEmployee {
 

@@ -1,4 +1,4 @@
-package com.greglturnquist.springonehateoasdemo.server;
+package com.greglturnquist.hateaoasdemo.webclient;
 
 import java.util.Objects;
 

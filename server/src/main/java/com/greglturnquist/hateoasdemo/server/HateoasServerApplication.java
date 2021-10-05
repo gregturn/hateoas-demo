@@ -1,17 +1,17 @@
-package com.greglturnquist.springonehateoasdemo.server;
+package com.greglturnquist.hateoasdemo.server;
+
+import static org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType.*;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.hateoas.config.EnableHypermediaSupport;
 
-import static org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType.*;
-
 @SpringBootApplication
 @EnableHypermediaSupport(type = { HAL, HAL_FORMS })
-public class SpringOneHateoasServerApplication {
+public class HateoasServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringOneHateoasServerApplication.class, args);
+		SpringApplication.run(HateoasServerApplication.class, args);
 	}
 
 }
